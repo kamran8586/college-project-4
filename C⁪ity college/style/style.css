@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+
+* {
+    margin         : 0;
+    padding        : 0;
+    box-sizing     : border-box;
+    list-style     : none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+/* Navbar designing */
+.sticky {
+    position: sticky;
+    top     : 0;
+}
+
+.header {
+    z-index: 100;
+}
+
+.nav-parent {
+    display        : flex;
+    justify-content: space-between;
+}
+
+.web-logo {
+    font-weight: 900;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-item::after,
+.active::after {
+    content         : '';
+    display         : block;
+    width           : 0;
+    height          : 2px;
+    background-color: rgb(31, 155, 124);
+    transition      : all 0.3s ease;
+}
+
+.active::after {
+    width: 100%;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+.btn-group {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-evenly;
+    padding        : 10px;
+}
+
+.nav-item-parent {
+    transition: all 0.3s ease;
+}
+
+/* Home page designing */
+.home-page {
+    height               : 100vh;
+    background-image     : linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/college_background.jpg');
+    background-size      : cover;
+    background-position  : center;
+    background-attachment: fixed;
+}
+
+.content-in-home {
+    height         : 40%;
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-evenly;
+    align-items    : center;
+}
+
+.home-btn {
+    background-color: rgb(204, 62, 51);
+    border          : 2px solid rgb(204, 62, 51);
+}
+
+.home-btn:hover {
+    background-color: transparent;
+    outline         : 2px solid rgb(204, 62, 51);
+}
+
+.home-btn-group {
+    width: 60%;
+}
+
+.para::selection {
+    background-color: yellow;
+    color           : black;
+}
+
+/* Services */
+.services {
+    margin-top: 8%;
+}
+
+.basic-c {}
+
+.web-development-c {}
+
+/* hamburger button designing */
+.burger-parent {
+    display        : none;
+    flex-direction : column;
+    justify-content: space-between;
+    width          : 23px;
+    height         : 20px;
+    cursor         : pointer;
+    position       : absolute;
+    top            : 50%;
+    right          : 1.5rem;
+}
+
+.burger {
+    background-color: rgb(82, 80, 80);
+    height          : 3px;
+    width           : 100%;
+}
+
+/* utility classes */
+.color-black {
+    color: black;
+}
+
+.color-white {
+    color: white;
+}
+
+.font-2-r {
+    font-size: 2rem;
+}
+
+.h-70 {
+    height: 70px;
+}
+
+.h-100-p {
+    height: 100%;
+}
+
+.p-25 {
+    padding: 0 25px;
+}
+
+.font-1p3-r {
+    font-size: 1.3rem;
+}
+
+.m-horizental-20 {
+    margin: 0 20px;
+}
+
+.m-vertical-100 {
+    margin: 100px 0;
+}
+
+.v-center {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+
+
+.outline:active {
+    outline: thick solid rgb(27, 197, 155);
+}
+
+.btn-primary {
+    background-color: rgba(27, 161, 88, 0.7);
+}
+
+.btn-primary:hover {
+    background-color: rgba(27, 161, 88, 0.9);
+}
+
+.btn-secandary {
+    background-color: rgba(35, 133, 116, 0.6);
+}
+
+.btn-secandary:hover {
+    background-color: rgba(35, 133, 116, 0.9);
+
+}
+
+.nav-fixed {
+    width     : 100%;
+    position  : fixed;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-active {
+    background-color: rgb(199, 189, 189);
+    box-shadow      : 5px -1px 12px -5px rgb(121, 118, 118);
+}
+
+.btn {
+    font-size     : 1.1rem;
+    padding       : 10px 15px;
+    cursor        : pointer;
+    vertical-align: middle;
+    border-radius : 5px;
+    transition    : all 0.1s ease;
+    border        : none;
+}
+
+.heading {
+    font-size  : 2.2rem;
+    font-weight: 900;
+}
+
+.heading::selection {
+    background-color: rgb(45, 218, 111);
+    color           : black;
+}
+
+.t-center {
+    text-align    : center;
+    vertical-align: middle;
+}
+
+
+
+.img {
+    filter: brightness(50%);
+}
+
+.content {
+    width: 50%;
+}
+
+.flex-rev-row,
+.flex-row {
+    display        : flex;
+    flex-direction : row-reverse;
+    justify-content: space-around;
+}
+
+.flex-row {
+    flex-direction: row;
+}
